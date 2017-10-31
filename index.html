@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Бургерлэнд</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+<style type="text/css">
+@font-face {
+    font-family: LifehackMedium;
+    src: url(fonts/LifehackMedium.otf);
+   }
+@font-face {
+    font-family: Gagalin-Regular;
+    src: url(fonts/Gagalin/Gagalin-Regular.otf);
+   }
+@font-face {
+    font-family: Ubuntu-B;
+    src: url(fonts/Ubuntu/Ubuntu-B.ttf);
+   }
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(fonts/Ubuntu/Ubuntu-Light.ttf);
+   }
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(fonts/Ubuntu/Ubuntu-Medium.ttf);
+   }
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+   }
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	main{
+		max-width: 1100px;
+		min-width: 1100px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.page{
+		width: 100%;
+		height: 650px;
+		position: relative;
+	}
+	#page-1:before{
+		background: url(images/slide-1-bg.jpg) no-repeat;
+		background-size: contain;
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -10;
+		top: 0;
+		left: 0;
+	}
+	#page-1{
+		background: url(images/slide-1-texture-bg.png) repeat;
+	}
+	nav{
+		position: fixed;
+		z-index: 100;
+	}
+	aside{
+		position: absolute;
+		display: block;
+		top: 90px;
+		right: 64px;
+		z-index: 101;
+	}
+	aside > .b-dot-nav{
+		position: fixed;
+	}
+	aside > .b-dot-nav > .dot-nav-list{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+	aside > .b-dot-nav > .dot-nav-list > li > a{
+		display: block;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		margin-bottom: 5px;
+		position: relative;
+		padding: 4px;
+		border: 1px solid rgba(255,255,255,0);
+	}
+	aside > .b-dot-nav > .dot-nav-list > li > a:before{
+		content: "";
+		display: block;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		position: absolute;
+		background-color: #fff;
+	}
+	aside > .b-dot-nav > .dot-nav-list > li:nth-child(1) > a{
+		border: 1px solid rgba(255,255,255,1);
+	}
+	nav{
+		display: flex;
+		top: 0;
+  		width: 100%;
+  		max-width: inherit;
+  		align-items: center;
+	}
+	nav > div:nth-child(2){
+		margin-left: auto;
+		padding-top: 2px;
+	}
+	.b-button{
+		margin-right: 80px;
+		padding-top: 2px;
+	}
+	.b-logo{
+		margin: 12px 0 0 78px;
+	}
+	.b-nav-list{
+		list-style-type: none;
+   		padding: 0;
+    	margin: 0;
+    	display: flex;
+	}
+	nav > div, .b-nav-list li{
+		display: inline-flex;
+	}
+	.b-nav-list li{
+		margin-right: 15px;
+	}
+	.b-nav-list li:after{
+	    content: "";
+	    display: flex;
+	    width: 5px;
+	    height: 5px;
+	    border-radius: 50%;
+	    background-color: #fff;
+	    margin-top: 5px;
+	    margin-left: 15px;
+	}
+	.b-nav-list li:last-child:after{
+	    content: "";
+	    display: none;
+	}
+	.b-nav-list > li > a, .b-button > a{
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		cursor: pointer;
+		font-family: Ubuntu-Medium;
+		font-size: 13px;
+	}
+	.page-one{
+		display: flex;
+   		max-width: 816px;
+    	align-items: center;
+    	margin: auto;
+    	height: inherit;
+	}
+	.page-one-image{
+		margin-bottom: 80px;
+		position: relative;
+	}
+	.page-one-image:before{
+		background: url(images/drops.png) no-repeat;
+	    content: "";
+	    width: 451px;
+	    height: 241px;
+	    position: absolute;
+	    z-index: 1;
+	    top: 68px;
+	    left: -46px;
+	}
+	.page-one-header h1{
+	    font-family: Gagalin-Regular;
+	    font-size: 69px;
+	    line-height: 60px;
+	    text-transform: uppercase;
+	    color: #f9b43b;
+	    letter-spacing: 2px;
+	    font-weight: 300;
+	    padding-bottom: 4px;
+	}
+	.page-one-header span{
+		font-family: LifehackMedium;
+    	font-size: 65px;
+    	color: #fff;
+    	text-transform: none;
+    	letter-spacing: -1.9px;
+    	padding-top: 35px;
+    	display: block;
+    	font-weight: 300;
+	}
+	.page-one-image img{
+		margin-left: -10px;
+		margin-right: 15px;
+	}
+	.b-button > a{
+		background-color: #e45028;
+		border-radius: 6px;
+		color: #fff;
+		text-align: center;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 15px;
+	}
+	.b-button > a:hover,.b-button > a:active,.b-button > a:focus{
+		background-color: #c1401e;
+	}
+	footer{
+		position: absolute;
+		bottom: 40px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+<main>
+	<nav>
+		<div class="b-logo">
+			<a href="/">
+				<img src="images/logo.png"></a>
+			</a>
+		</div>
+		<div class="b-nav">
+			<ul class="b-nav-list">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Бургеры</a></li>
+				<li><a href="#">Команда</a></li>
+				<li><a href="#">Меню</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="b-button">
+			<a href="#" class="b-button-link">Заказать</a>
+		</div>
+	</nav>
+	<aside>
+		<div class="b-dot-nav">
+			<ul class="dot-nav-list">
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</div>
+	</aside>
+	<section class="page" id="page-1">
+		<div class="page-one">
+			<div class="page-one-image">
+				<img src="images/burger.png" alt="натуральные бургеры" />
+			</div>
+			<div class="page-one-header">
+				<h1>Мы делаем <span>натуральные бургеры</span></h1>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="arrow-scroll">
+			<a href="#"><img src="images/arrow-scroll.png"></a>
+		</div>	
+	</footer>
+</main>
+</body>
+</html>

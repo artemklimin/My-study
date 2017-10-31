@@ -1,0 +1,97 @@
+.any-button--more {
+    background-color: $dark;
+    color: #fff;
+}
+
+.any-button--more:hover {
+    background-color: $dark + 20%;
+    color: #fff;
+}
+
+.piple {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    background-color: #505050;
+}
+
+.piple-item {
+    width: 25%;
+    height: 50%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.piple-item>div {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.piple-item:hover>div {
+    opacity: 1;
+}
+
+.piple-item .piple-item__conteiner {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+.piple-item:hover .piple-item__conteiner {
+    background-color: rgba(80, 80, 80, 0.5);
+}
+
+.piple-item--01 {
+    background-image: url(../images/foto-01.jpg);
+}
+
+.piple-item--02 {
+    background-image: url(../images/foto-02.jpg);
+}
+
+.piple-item--03 {
+    background-image: url(../images/foto-03.jpg);
+}
+
+.piple-item--04 {
+    background-image: url(../images/foto-04.jpg);
+}
+
+.piple-item--05 {
+    background-image: url(../images/foto-05.jpg);
+}
+
+.piple-item--06 {
+    background-image: url(../images/foto-06.jpg);
+}
+
+.piple-item--07 {
+    background-image: url(../images/foto-07.jpg);
+}
+
+.piple-item--08 {
+    background-image: url(../images/foto-08.jpg);
+}
+
+.piple-item__title {
+    color: #fff;
+    font-family: gagalin;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.42;
+}
+
+.piple-item__body {
+    color: #fff;
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.42;
+    margin: 0;
+    padding-bottom: 20px;
+}
