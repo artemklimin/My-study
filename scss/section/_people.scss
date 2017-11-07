@@ -8,7 +8,7 @@
     color: #fff;
 }
 
-.piple {
+.people-list {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -17,68 +17,64 @@
     align-items: center;
     flex-flow: wrap;
     background-color: #505050;
+    height: 100%;
 }
 
-.piple-item {
+.people-list__item {
     width: 25%;
     height: 50%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(100%);
 }
 
-.piple-item>div {
+.people-list__item>div {
     opacity: 0;
     transition: 0.2s;
 }
 
-.piple-item:hover>div {
+.people-list__item:hover>div {
     opacity: 1;
 }
 
-.piple-item .piple-item__conteiner {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-}
-
-.piple-item:hover .piple-item__conteiner {
+.people-list__item:hover .list-item-conteiner {
     background-color: rgba(80, 80, 80, 0.5);
 }
 
-.piple-item--01 {
-    background-image: url(../images/foto-01.jpg);
+.people-list__item--01 {
+    background-image: url(../images/foto-01c.jpg);
 }
 
-.piple-item--02 {
-    background-image: url(../images/foto-02.jpg);
+.people-list__item--02 {
+    background-image: url(../images/foto-02c.jpg);
 }
 
-.piple-item--03 {
-    background-image: url(../images/foto-03.jpg);
+.people-list__item--03 {
+    background-image: url(../images/foto-03c.jpg);
 }
 
-.piple-item--04 {
-    background-image: url(../images/foto-04.jpg);
+.people-list__item--04 {
+    background-image: url(../images/foto-04c.jpg);
 }
 
-.piple-item--05 {
-    background-image: url(../images/foto-05.jpg);
+.people-list__item--05 {
+    background-image: url(../images/foto-05c.jpg);
 }
 
-.piple-item--06 {
-    background-image: url(../images/foto-06.jpg);
+.people-list__item--06 {
+    background-image: url(../images/foto-06c.jpg);
 }
 
-.piple-item--07 {
-    background-image: url(../images/foto-07.jpg);
+.people-list__item--07 {
+    background-image: url(../images/foto-07c.jpg);
 }
 
-.piple-item--08 {
-    background-image: url(../images/foto-08.jpg);
+.people-list__item--08 {
+    background-image: url(../images/foto-08c.jpg);
 }
 
-.piple-item__title {
+.item-title {
     color: #fff;
     font-family: gagalin;
     font-size: 14px;
@@ -86,7 +82,7 @@
     line-height: 1.42;
 }
 
-.piple-item__body {
+.item-body {
     color: #fff;
     font-family: 'ubuntu';
     font-size: 14px;
